@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../src/style.css" />
+    <script defer src="../src/script-register.js"></script>
+    <script defer src="../src/global.js"></script>
+    <title>Register Page</title>
+  </head>
+  <body>
+    <div id="dark-mode">
+      <button id="dark-mode-button" title="Mudar Tema">
+        <i class="far fa-sun"></i>
+      </button>
+    </div>
+    <div class="container">
+      <div class="wrapper">
+        <h1>Registrar-se</h1>
+        <form action="#" method="GET" class="inputs">
+          <div class="error">Os campos deve ser preenchido</div>
+          <input
+            type="text"
+            required
+            placeholder="Nome de Usuário"
+            id="name"
+            minlength="4"
+          />
+          <input type="email" required placeholder="Email" id="email" />
+          <input
+            type="password"
+            required
+            placeholder="Senha"
+            id="password"
+            minlength="6"
+          />
+          <div class="show-password-area">
+            <input type="checkbox" id="show-password" />
+            <label for="show-password">Mostrar Senha</label>
+          </div>
+
+          <button>Registrar-se</button>
+        </form>
+        <div class="register">
+          <p>Já tem uma Conta?</p>
+          <a href="../login/">Faça Login</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
