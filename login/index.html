@@ -46,7 +46,15 @@
         <h1>Fazer Login</h1>
         <form action="#" method="GET" class="inputs">
           <div class="error">Os campos devem ser preenchidos</div>
-          <input type="email" required placeholder="Email" id="email" />
+          <label class="sr-only" for="email">Email</label>
+          <input
+            type="email"
+            required
+            placeholder="Email"
+            id="email"
+            autocomplete="none"
+          />
+          <label class="sr-only" for="password">Senha</label>
           <input
             type="password"
             required

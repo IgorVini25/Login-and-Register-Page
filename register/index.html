@@ -47,14 +47,24 @@
         <h1>Registrar-se</h1>
         <form action="#" method="GET" class="inputs">
           <div class="error">Os campos deve ser preenchido</div>
+          <label class="sr-only" for="name">Nome de Usuário</label>
           <input
             type="text"
             required
             placeholder="Nome de Usuário"
             id="name"
             minlength="4"
+            autocomplete="none"
           />
-          <input type="email" required placeholder="Email" id="email" />
+          <label class="sr-only" for="email">Email</label>
+          <input
+            type="email"
+            required
+            placeholder="Email"
+            id="email"
+            autocomplete="none"
+          />
+          <label class="sr-only" for="password">Senha</label>
           <input
             type="password"
             required
